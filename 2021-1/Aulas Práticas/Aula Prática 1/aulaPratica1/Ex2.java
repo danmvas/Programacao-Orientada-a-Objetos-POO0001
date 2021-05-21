@@ -1,7 +1,7 @@
 //Escreva um programa em Java, que leia o nome e a idade de 3 pessoas
 //e exiba-os no console. É obrigatório o uso de array.
 
-package exercicios;
+package aulaPratica1;
 import java.util.Scanner;
 
 public class Ex2 {
@@ -18,9 +18,9 @@ public class Ex2 {
             idades[i] = leitor.nextInt();
         }
 
-        for (int i = 0; i < 3; i++){
-            System.out.println(nomes[i]);
-            System.out.println(idades[i] + "\n");
+        for(int j = 0; j < 3; j--){
+            System.out.println(nomes[j]);
+            System.out.println(idades[j] + "\n");
         }
 
         leitor.close();
