@@ -55,7 +55,6 @@ public class SistemaPetShop {
     }
 
     public void usuario(){
-        System.out.println("Ola! Seja-bem vindo ao -> Pet Shop <-. Como podemos ajuda-lo hoje?");
         System.out.println("");
     }
 }
