@@ -1,4 +1,6 @@
-package aulaPratica2.exercicio2;
+package dados;
+
+import java.util.Arrays;
 
 public class Veterinario {
 
@@ -6,7 +8,7 @@ public class Veterinario {
     private int salario;
     private Endereco endereco;
     private Animal animais[];
-    private int quantiadeAnimais;
+    private int quantidadeAnimais;
 
     public String getNome() {
         return nome;
@@ -27,19 +29,23 @@ public class Veterinario {
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
     }
+
     public Animal[] getAnimais() {
         return animais;
     }
     public void setAnimais(Animal[] animais) {
         this.animais = animais;
     }
-    public int getQuantiadeAnimais() {
-        return quantiadeAnimais;
+    public int getQuantidadeAnimais() {
+        return quantidadeAnimais;
     }
-    public void setQuantiadeAnimais(int quantiadeAnimais) {
-        this.quantiadeAnimais = quantiadeAnimais;
+    public void setQuantidadeAnimais(int quantidadeAnimais) {
+        this.quantidadeAnimais = quantidadeAnimais;
     }
 
-    
+    public String toString() {
+        return "Veterinario [animais=" + Arrays.toString(animais) + ", endereco=" + endereco + ", nome=" + nome
+                + ", quantiadeAnimais=" + quantidadeAnimais + ", salario=" + salario + "]";
+    }
     
 }

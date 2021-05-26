@@ -1,4 +1,4 @@
-package aulaPratica2.exercicio2;
+package dados;
 
 public class Dono {
     

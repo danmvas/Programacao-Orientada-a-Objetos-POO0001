@@ -1,4 +1,4 @@
-package aulaPratica2.exercicio1;
+package exercicio1;
 
 public class Grupo {
 
