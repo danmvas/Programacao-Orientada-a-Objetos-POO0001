@@ -8,7 +8,21 @@ public class Veterinario {
     private int salario;
     private Endereco endereco;
     private Animal animais[];
-    private int quantidadeAnimais;
+    private int quantidadeAnimais = 0;
+
+    public Veterinario(int tamAnimais){
+        animais = new Animal[tamAnimais];
+    }
+
+    public void addAanimal(Animal animal){
+        if(quantidadeAnimais < animais.length){
+            animais[quantidadeAnimais] = animal;
+            quantidadeAnimais++;
+        }
+
+        else
+            System.out.println("Nao foi possivel inserir o animal. O array ja esta em sua capacidade máxima.");
+    }
 
     public String getNome() {
         return nome;
@@ -36,11 +50,9 @@ public class Veterinario {
     public void setAnimais(Animal[] animais) {
         this.animais = animais;
     }
+
     public int getQuantidadeAnimais() {
         return quantidadeAnimais;
-    }
-    public void setQuantidadeAnimais(int quantidadeAnimais) {
-        this.quantidadeAnimais = quantidadeAnimais;
     }
 
     public String toString() {

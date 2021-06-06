@@ -6,6 +6,10 @@ public class Dono {
     private Endereco endereco;
     private int cpf;
 
+    public Dono(Endereco endereco){
+        
+    }
+
     public String getNome() {
         return nome;
     }

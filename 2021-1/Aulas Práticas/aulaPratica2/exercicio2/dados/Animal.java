@@ -7,6 +7,10 @@ public class Animal {
     private String especie;
     private String descricao;
 
+    public Animal(){
+        
+    }
+
     public String getNome() {
         return nome;
     }

@@ -12,7 +12,7 @@ public class SistemaPetShop {
         System.out.println("=========================================================");
         System.out.println("Informe o nome e o salario do veterinario a ser cadastrado: " + leitor.nextLine() + leitor.nextInt());
         
-
+        usuario();
     }
 
     public void mostrarVeterinarios(){
@@ -26,12 +26,13 @@ public class SistemaPetShop {
             "Animais: " + veterinarios[i].getAnimais() + "\n"
             + "\n=========================================================\n");
         }
+        usuario();
     }
 
     public void cadastrarEnderecoVeterinario(){
         System.out.println("=========================================================");
         System.out.println("");
-
+        usuario();
     }
 
     public void mostrarAnimais(){
@@ -39,10 +40,12 @@ public class SistemaPetShop {
         System.out.println("Qual veterinario deseja visualizar os animais cadastrados? " + leitor.next());
         
         leitor.close();
+        usuario();
     }
     
     public void cadastrarDono(){
 
+        usuario();
     }
 
     public void cadastrarEnderecoDano(){
@@ -51,10 +54,16 @@ public class SistemaPetShop {
         System.out.println("=========================================================");
         System.out.println("Informe o animal que deseja cadastrar o endereco do dono.");
 
-        
+        usuario();
     }
 
     public void usuario(){
-        System.out.println("");
+        System.out.println("1: Cadastrar um veterinario.");
+        System.out.println("2: Mostar todos os veterinarios.");
+        System.out.println("3: Cadastrar endereco de um veterinario.");
+        System.out.println("4: Cadastrar um animal a um funcionario.");
+        System.out.println("5: ");
+        System.out.println("6: ");
+        System.out.println("7: Cadastrar endereco de um dono.");
     }
 }
