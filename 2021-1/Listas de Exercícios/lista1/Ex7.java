@@ -1,6 +1,5 @@
 import java.util.Scanner;
 import java.time.LocalDate;
-import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
 
 public class Ex7 {
@@ -24,7 +23,7 @@ public class Ex7 {
         
         LocalDate dataAtual = LocalDate.now();
         LocalDate dataNascimento = LocalDate.of(ano, mes, dia);
-        long dias = ChronoUnit.DAYS.between(dataNascimento, dataAtual);
+        LocalDate dataFinal = dataAtual - dataNascimento;
 
         System.out.println("Dias = " + dias);   
 
