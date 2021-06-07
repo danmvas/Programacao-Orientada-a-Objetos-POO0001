@@ -26,6 +26,7 @@ public class Ex6 {
                 if (ci == cj){
                     letras += ci;
                     cont++;
+                    break;
                 }
             }
         }
