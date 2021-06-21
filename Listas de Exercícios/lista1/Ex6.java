@@ -15,7 +15,6 @@ public class Ex6 {
         String string2min = string2.toLowerCase().replace(" ", "");
 
         String letras = "";
-        int cont = 0;
 
         for(int i=0; i < string1min.length(); i++){
             Character ci = string1min.charAt(i);
@@ -25,7 +24,6 @@ public class Ex6 {
                 char cj = string2min.charAt(j);
                 if (ci == cj){
                     letras += ci;
-                    cont++;
                     break;
                 }
             }
