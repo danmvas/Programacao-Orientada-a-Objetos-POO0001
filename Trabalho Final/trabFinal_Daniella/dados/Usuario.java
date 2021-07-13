@@ -1,6 +1,10 @@
 package trabFinal_Daniella.dados;
-
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.util.jar.JarException;
+import javazoom.jl.decoder.JavaLayerException;
+import javazoom.jl.player.Player;
+import java.util.Scanner;
 
 public class Usuario {
 
@@ -54,14 +58,27 @@ public class Usuario {
         this.musica = musica;
     }
 
+    //add musicas no vetor
     public void upload(){
-
+        /*
+        PreparedStatement ps = con.prepareStatement("SELECTimgFROMimagesWHEREimgname=?");
+        ps.setString(1, "myimage.gif");
+        ResultSet rs = ps.executeQuery();
+        if (rs != null){
+            while (rs.next()){
+                byte[] imgBytes = rs.getBytes(1);
+            // use os dados de alguma forma
+        }
+        rs.close();
+        }
+    ps.close();
+    */
     }
 
     public void tocarPrevia(){
         try{
-            FileInputStream fileInputStream = new FileInpurStream("musica.mp3");
-            Player player new Player(fileInputStream);
+            FileInputStream fileInputStream = new FileInputStream("musica.mp3");
+            Player player = new Player(fileInputStream);
             System.out.println("Song is playing...");
             player.play(300);
         } catch (FileNotFoundException e){
@@ -72,8 +89,15 @@ public class Usuario {
     }
 
     public void criarPlaylist(){
+        Playlist nova_Playlist = new Playlist();
+        Scanner s = new Scanner(System.in);
+        
+        System.out.println("Nome da playlist: ");        
+        nova_Playlist.setNome(s.nextLine());
 
+        nova_Playlist.setIdPlaylist();
     }
+
 
     public void listarMusica(){
 

@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "Trabalho Final/trabFinal_Daniella/build/jlayer-1.0.1.jar",
+        "Trabalho Final/trabFinal_Daniella/build/play-mp3-java-master/jl-1.0.1.jar"
+    ]
+}
