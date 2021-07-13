@@ -104,7 +104,9 @@ public class Usuario {
     }
 
     public void excluirMusicaPlaylist(){
-
+        System.out.println("Qual musica deseja excluir?");
+        Scanner s = new Scanner(System.in);
+        
     }
 
     public void addMusicaPlaylist(){
