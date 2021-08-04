@@ -1,0 +1,13 @@
+{
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar",
+    "libs/postgresql-42.2.23.jar"
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "prettier.enableDebugLogs": true,
+  "prettier.prettierPath": "D:\\Downloads\\prettierrc",
+  "prettier.jsxSingleQuote": true
+}
