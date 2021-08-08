@@ -9,7 +9,7 @@ public class Artista {
 
     }
 
-    public String getNome() {
+    public String               getNome() {
         return nome;
     }
 
