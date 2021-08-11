@@ -18,7 +18,7 @@ public class Musica {
         this.nome = nome;
     }
 
-    public boolean isFavorita()              {
+    public boolean isFavorita() {
         return favorita;
     }
 
@@ -30,7 +30,7 @@ public class Musica {
         return idMusica;
     }
 
-    public void setIdMusica(int             idMusica) {
+    public void setIdMusica(int idMusica) {
         this.idMusica = idMusica;
     }
     

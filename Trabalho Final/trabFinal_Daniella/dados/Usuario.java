@@ -2,9 +2,8 @@ package trabFinal_Daniella.dados;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.jar.JarException;
-import javazoom.jl.decoder.JavaLayerException;
-import javazoom.jl.player.Player;
 import java.util.Scanner;
+import trabFinal_Daniella.dados.*;
 
 public class Usuario {
 
