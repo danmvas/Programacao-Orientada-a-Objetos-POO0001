@@ -1,12 +1,13 @@
 package trabFinal_Daniella.dados;
 
+import java.util.UUID;
 public class Playlist {
 
     private String nome;
     private int idPlaylist;
 
     public Playlist(){
-        
+        this.idPlaylist = UUID.randomUUID();
     }
 
     public String getNome() {

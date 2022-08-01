@@ -1,4 +1,5 @@
 package trabFinal_Daniella.dados;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.jar.JarException;
@@ -13,7 +14,7 @@ public class Usuario {
     private Playlist playlist;
     private Musica musica;
 
-    public Usuario(){
+    public Usuario() {
 
     }
 
@@ -57,71 +58,64 @@ public class Usuario {
         this.musica = musica;
     }
 
-    //add musicas no vetor
-    public void upload(){
+    // add musicas no vetor
+    public void upload() {
         /*
-        PreparedStatement ps = con.prepareStatement("SELECTimgFROMimagesWHEREimgname=?");
-        ps.setString(1, "myimage.gif");
-        ResultSet rs = ps.executeQuery();
-        if (rs != null){
-            while (rs.next()){
-                byte[] imgBytes = rs.getBytes(1);
-            // use os dados de alguma forma
-        }
-        rs.close();
-        }
-    ps.close();
-    */
+         * PreparedStatement ps =
+         * con.prepareStatement("SELECTimgFROMimagesWHEREimgname=?"); ps.setString(1,
+         * "myimage.gif"); ResultSet rs = ps.executeQuery(); if (rs != null){ while
+         * (rs.next()){ byte[] imgBytes = rs.getBytes(1); // use os dados de alguma
+         * forma } rs.close(); } ps.close();
+         */
     }
 
-    public void tocarPrevia(){
-        try{
+    public void tocarPrevia() {
+        try {
             FileInputStream fileInputStream = new FileInputStream("musica.mp3");
             Player player = new Player(fileInputStream);
             System.out.println("Song is playing...");
             player.play(300);
-        } catch (FileNotFoundException e){
+        } catch (FileNotFoundException e) {
             e.printStackTrace();
-        } catch (JavaLayerException e){
+        } catch (JavaLayerException e) {
             e.printStackTrace();
         }
     }
 
-    public void criarPlaylist(){
+    public void criarPlaylist() {
         Playlist nova_Playlist = new Playlist();
         Scanner s = new Scanner(System.in);
-        
-        System.out.println("Nome da playlist: ");        
+
+        System.out.println("Nome da playlist: ");
         nova_Playlist.setNome(s.nextLine());
 
         nova_Playlist.setIdPlaylist();
     }
 
-
-    public void listarMusica(){
-
-    }
-
-    public void excluirMusicaPlaylist(){
-        System.out.println("Qual musica deseja excluir?");
-        Scanner s = new Scanner(System.in);
+    public void listarMusica() {
         
     }
 
-    public void addMusicaPlaylist(){
+    public void excluirMusicaPlaylist() {
+        System.out.println("Qual musica deseja excluir?");
+        Scanner s = new Scanner(System.in);
 
     }
 
-    public void excluiMusicaApp(){
+    public void addMusicaPlaylist() {
 
     }
 
-    public void listaArtistas(){
+    public void excluiMusicaApp() {
 
     }
 
-    public void favoritaMusica(){
+    public void listaArtistas() {
 
     }
-    
+
+    public void favoritaMusica() {
+
+    }
+
 }
